@@ -1,0 +1,76 @@
+
+
+*{padding: 0; margin: 0;}
+
+.navigation{
+  position: fixed;
+}
+
+.nav-all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 60px;
+}
+
+.home {
+  margin-right: 43px;
+}
+
+.d-block {
+  display: block;
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+
+
+.home-icon{
+  width: 40px;
+  height: 40px;
+}
+
+.search{
+  display: flex;
+  height: 35px;
+  width: 500px;
+}
+
+.search-bar {
+  margin-right: 40px;
+}
+
+.btn-more-icon{
+  margin-left: 30px;
+}
+.search-icon, .btn-more-icon {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  position: relative;
+}
+
+.account {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.account a {
+  margin-left: 20px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.account a:hover {
+  color: #fff;
+}
+
+.account{
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
+}
