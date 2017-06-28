@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style_upper_bar.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <section class="keyword">
+      <h2 class="keyword-title sr-only">키워드</h2>
+      <div class="keyword-tabpanel">
+        <div class="keyword-nav">
+          <a
+            id="nav1"
+            href="#first-tab">n행시</a>
+          <a
+            id="nav2"
+            href="#second-tab">아무말 대잔치</a>
+        </div>
+        <ul class="keyword-list">
+          <li
+            id="first-tab"
+            class="keyword-item first">
+            <div class="keyword-container">
+              <a href="#">테트리스</a>
+              <a href="#">백기훈</a>
+              <a href="#">쓰레기통</a>
+            </div>
+          </li>
+          <li
+            id="second-tab"
+            class="keyword-item second">
+            <div class="keyword-container">
+              <a href="#">철수는</a>
+              <a href="#">첫사랑</a>
+              <a href="#">나는 누구인가</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="pagination">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script>
+    var firstTabButton = document.getElementById('nav1');
+    var secondTabButton = document.getElementById('nav2');
+    var firstPanel = document.getElementById('first-tab');
+    var secondPanel = document.getElementById('second-tab');
+
+    firstTabButton.addEventListener('click', function() {
+      secondPanel.style.display = 'none';
+      firstPanel.style.display = 'block';
+      this.style.backgroundColor = '#ddd';
+      secondTabButton.style.backgroundColor = '#f1f1f1';
+    })
+    secondTabButton.addEventListener('click', function() {
+      firstPanel.style.display = 'none';
+      secondPanel.style.display = 'block';
+      this.style.backgroundColor = '#ddd';
+      firstTabButton.style.backgroundColor = '#f1f1f1';
+    })
+
+  </script>
+</body>
+</html>

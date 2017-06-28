@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>멋쟁이 사자처럼</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
   </head>
   <body>
 
@@ -46,8 +48,47 @@
 
 
     <div class = "body-box">
-      <section class = "upper">
-      </section>
+      <div class="container">
+        <section class="keyword">
+          <h2 class="keyword-title sr-only">키워드</h2>
+          <div class="keyword-tabpanel">
+            <div class="keyword-nav">
+              <a
+                id="nav1"
+                href="#first-tab">n행시</a>
+              <a
+                id="nav2"
+                href="#second-tab">아무말 대잔치</a>
+            </div>
+            <ul class="keyword-list">
+              <li
+                id="first-tab"
+                class="keyword-item first">
+                <div class="keyword-container">
+                  <a href="#">테트리스</a>
+                  <a href="#">백기훈</a>
+                  <a href="#">쓰레기통</a>
+                </div>
+              </li>
+              <li
+                id="second-tab"
+                class="keyword-item second">
+                <div class="keyword-container">
+                  <a href="#">철수는</a>
+                  <a href="#">첫사랑</a>
+                  <a href="#">나는 누구인가</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+
+
+
+
+
 
       <section class = "main-content">
         <div class="user-post">
@@ -77,10 +118,32 @@
           </div>
         </div>
       </section>
-
-      <footer>
-      </footer>
     </div>
 
+
+    <script>
+      var firstTabButton = document.getElementById('nav1');
+      var secondTabButton = document.getElementById('nav2');
+      var firstPanel = document.getElementById('first-tab');
+      var secondPanel = document.getElementById('second-tab');
+
+      firstTabButton.addEventListener('click', function() {
+        secondPanel.style.display = 'none';
+        firstPanel.style.display = 'block';
+        this.style.backgroundColor = '#ddd';
+        secondTabButton.style.backgroundColor = '#f1f1f1';
+      })
+      secondTabButton.addEventListener('click', function() {
+        firstPanel.style.display = 'none';
+        secondPanel.style.display = 'block';
+        this.style.backgroundColor = '#ddd';
+        firstTabButton.style.backgroundColor = '#f1f1f1';
+      })
+
+    </script>
+
+    <footer class="under-bar">
+      <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/logo/likelion-white-a930fbcdf3042a50ba882ece9c02f43536971297a8e143e212d9b92d653bfa44.png" alt="">
+    </footer>
   </body>
 </html>

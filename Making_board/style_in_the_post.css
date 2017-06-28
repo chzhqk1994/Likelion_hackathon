@@ -2,11 +2,15 @@
 
 
 
-.navigation{
+nav{
   position: fixed;
+  top: 0;
 }
 
 .nav-all{
+  width: 100%;
+  position: fixed;
+  z-index: 1000; /*가장 윗 층으로 올림(1000층)*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,6 +125,7 @@ nav {
 }
 
 .post-part{
+  margin-top: 50px;
   padding: 15px;
   width: 100%;
   height: auto;
@@ -156,11 +161,52 @@ nav {
   margin-top: 20px;
 }
 
-footer p{
-  margin-top: 10px;
-  display: block;
-  width: 100%;
-  height: 50px;
-  color: white;
+.comment-input{
+  display: flex;
+  border: 1px solid #f1f1f1;
+  padding: 20px;
+  /*padding-left: 100px;*/
+  width: 900px;
+  height: 150px;
+  margin: auto;
+}
+
+.char{
+  padding-right: 10px;
+  display: inline;
+}
+
+.input-char{
+  height: 30px;
+}
+
+.char1{
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+button{
+  width: 80px;
+  height: 60px;
   background-color: black;
+  border-color: black;
+  color: white;
+}
+
+.under-bar{
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+
+.under-bar img{
+  width: 200px;
+  height: auto;
+  max-height: 31.44px;
+
 }
