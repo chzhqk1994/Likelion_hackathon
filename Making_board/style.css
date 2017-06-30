@@ -198,6 +198,13 @@ a {
 .keyword-nav a:first-child {
   background-color: #ddd;
 }
+
+.btn-add{
+  position: absolute;
+  margin-right: 15px;
+  right: 0;
+}
+
 .pagination{
   display: flex;
   justify-content: center;
